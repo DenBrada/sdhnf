@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Clah Display";
+    src:url(../fons/ClashDisplay-Light.woff2);
+    font-weight:600;
+}
+
+
+@font-face {
+    font-family: "Clah Display";
+    src:url(../fons/ClashDisplay-Bold.woff2);
+    font-weight:900;
+}
+
+
+@font-face {
+    font-family: "Clah Display";
+    src:url(../fons/Satoshi-Regular.woff2);
+    font-weight:400;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-white: #000000;
+    --color-lite-gray: #F9F9F9;
+    --color-darc-primari: #2a254b;
+    --color-nav-links: #726E80;
+}
+
+header{
+    display: grid;
+    row-gap: 20px;
+    padding: 0 2vw;
+    padding-top: 20px;
+}
+
+header>div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+header>div span{
+    font-family: "Clah Display";
+    justify-self: center;
+    font-size: 24px;
+}
+
+header>div div.icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2vw;
+}
+
+header>div svg{
+    height: 16px;
+    color: var(--color-darc-primari);
+}
+
+
+header nav{
+    justify-self: center;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    column-gap: 4vw;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: var(--color-nav-links);
+    font-family: Satoshi;
+    font-size: 16px;
+}
+
+header nav ul a:hover{
+    color: var(--color-darc-primari);
+    transition: all 0.7s;
+}
